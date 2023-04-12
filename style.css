@@ -43,7 +43,7 @@ h2 {
     padding: 30px;
     box-shadow: -.5rem .5rem 2rem #403d39;
     background-color: #fffcf2;
-background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ccc5b9' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ccc5b9' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .intro img {
@@ -95,11 +95,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox=
 .projects {
     background-color: #fffcf2;
 background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ccc5b9' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
-    padding: 5rem 2rem;
+    padding: 3rem 6rem;
 }
 
 .proj-head {
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
 }
 
 .proj-cards {
@@ -119,33 +119,29 @@ background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox=
 }
 
 .contact {
-    width: 50%;
-    padding: 100px 20px;
-    gap: 5rem;
+    padding: 100px 6rem;
+    gap: 3rem;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
 }
 
-.contact form {
+.comments-container {
     display: flex;
-    flex-direction: column;
-    gap: .3rem;
+    gap: .5rem;
+    padding: 1rem;
+    border: 1px solid red;
 }
 
-.contact form input, .contact form textarea {
-    font-size: 1.2rem;
+.comment-post input {
+    width: 40ch;
+    min-width: 30ch;
 }
 
-.contact button {
-    width: 4rem;
+.comment-post button {
+    padding: 3px 10px;
+    background-color:#eb5e28;
+    color: #fffcf2;
     border: none;
-    padding: 2px 4px;
-}
-
-.contact button:hover {
-    background-color: #eb5e28;
-    color: #fff;
 }
 
 .links2 {
@@ -237,9 +233,4 @@ background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox=
     .contact {
         flex-direction: column;
     }
-
-    .contact form {
-        order: 1;
-    }
-
 }
