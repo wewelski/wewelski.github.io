@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet Roowell!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="https://kit.fontawesome.com/6a33338a9a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -44,7 +45,7 @@
     <div class="about-content">
       <h2>About Me</h2>
       <p>
-        I am career shifter who's been a volunteer for a substantial amount of time. Through curiosity and self-learning, I am slowly trying to make my way into tech. Thanks to <a href="https://kodego.ph/" target="_blank">KodeGo</a> and their intensive web development bootcamp, I am now doing what I enjoy most.
+        I am career shifter who's been a volunteer for a substantial amount of time. Through curiosity and self-learning, I am slowly making making my way into tech. Thanks to <a href="https://kodego.ph/" target="_blank">KodeGo</a> and their intensive web development bootcamp, I am now doing what I enjoy most.
         Besides my tech stack, I am also a gamer, ouido drummer, husband, and Ravi's best buddy.
       </p>
     </div>
@@ -76,10 +77,11 @@
   </section>
 
   <section class="contact" id="contact">
+
     <div class="contact-text">
       <h2>Let's Connect!</h2>
-      <p><em>"Two are better than one, because they have a good return for their work." Ecclesiastes 4:9</em></p><br>
-      <p>We are in an age where collaboration can take us as far. And I am here to help you.</p><br>
+      <p>We are in an age where collaboration can take us as far. And I am here to help you.</p>
+      <p id="bverse">"Two are better than one, because they have a good return for their work." <strong>Ecclesiastes 4:9</strong></p>
       <div class="links2">
         <a href="https://codepen.io/Roowell-Fernandez" target="_blank">
           <img src="images/codepen.svg" alt="codepen" width="25">
@@ -94,14 +96,31 @@
     </div>
 
     <div class="comments-container">
-      <div class="comment-post">
-        <input type="text" id="comment-box" placeholder="Say hi..">
-        <button id="post">Post</button>
-        <hr style="margin-top: .5rem;">
+      <div class="left">
+        <form id="form">
+          <input type="text" name="post" id="input" placeholder="Leave a message here..">
+          <button type="submit">Post</button>
+        </form>
       </div>
-      <ul id="unordered">
-
-      </ul>
+      <div class="right">
+        <h4>Messages</h4>
+        <div id="posts">
+          <div>
+            <p>Sample post 1</p>
+            <span class="options">
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </span>
+          </div>
+          <div>
+            <p>Sample post 2</p>
+            <span class="options">
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt"></i>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
 
   </section>
